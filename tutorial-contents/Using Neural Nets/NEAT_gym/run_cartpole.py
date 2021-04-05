@@ -47,7 +47,7 @@ def run():
     stats = neat.StatisticsReporter()
     pop.add_reporter(stats)
     pop.add_reporter(neat.StdOutReporter(True))
-    pop.add_reporter(neat.Checkpointer(5))
+    pop.add_reporter(neat.Checkpointer(CHECKPOINT))
 
     pop.run(eval_genomes, 10)       # train 10 generations
 
